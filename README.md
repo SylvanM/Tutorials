@@ -1,2 +1,8 @@
 # General Computery Tutorials
-This is a collection of tutorials I have been making through the years I thought I'd share. Might help some others.
+
+A collection of tutorials I've made to help anyone else who might want them.
+
+All tutorials made by Sylvan Martin
+
+## Basic
+ - [Introduction to the Command Line (Mac)](/commandline/tutorial.md)
