@@ -24,4 +24,11 @@ Now you are ready to start typing in commands! Notice the “~” (tilde) follow
 
 ### Basic Commands
 
-First, type “ls” and hit enter. 
+Before beginning commands, the convention for writing a command in plain text is:
+
+```bash
+$ command-goes-here
+```
+
+and that `$` character denotes that what follows is a command to be entered into a command prompt.
+
