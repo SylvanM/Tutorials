@@ -47,4 +47,23 @@ And here is what `$ ls` outputs on my computer:
 
 ![ls output](ls_output_example.png)
 
-Sure enough, we see the same stuff we would have seen in the Finder app.
+Sure enough, we see the same stuff we would have seen in the Finder app (and a little bit more).
+But listing whatever is in your current directory doesn't really help. We need to be able to actually move between folders and change directories, just as when using a GUI you can click on folders to open them. This is when the `cd` command comes in. To change directories, (open a folder to view or edit its contents) we enter
+
+```bash
+$ cd name-of-directory
+```
+
+where `name-of-directory` is where you want to go. For example, I have a programming folder in my home directory. If I wanted to access that from inside the Terminal, I could enter
+
+```bash
+cd Programming
+```
+
+from the home directory. It is important to remember that unless you put a `/` (which has a special meaning that will be addressed later) before the directory you are trying to go to, it will be treated as a **relative path.** This means that it will search for the desired directory within the directory you are currently in. For example, I have a folder called "Python" which is in my Programming folder, but I would not be able to run
+
+```bash
+$ cd Python
+```
+
+from my home directory, because "Python" is not directly accessible from the home folder, we have to enter the Programming folder first. 
