@@ -4,7 +4,7 @@ By Sylvan Martin
 
 ## What it is
 
-The command line, or “shell” as it is most often referred to, is a way to interact with and use your computer which gives you more control than the regular GUI we are used to. While in the beginning it may be harder to use, it is worth having a basic understanding of how to use it as we will be using it a lot in the club
+The command line, or “shell” as it is most often referred to, is a way to interact with and use your computer which gives you more control than the regular GUI we are used to. While in the beginning it may be harder to use, it is worth having a basic understanding of how to use it as we will be using it a lot in the club.
 
 ## How it works
 
@@ -31,4 +31,14 @@ $ command-goes-here
 ```
 
 and that `$` character denotes that what follows is a command to be entered into a command prompt.
+Moving on!
 
+The commands you will use most often are the `ls` and `cd` commands. `ls` is a very simple command that tells the computer to list and display every file and directory (folder) inside of the current directory. So, if you are in your home directory, (which is the default directory when first opening the terminal) and you enter `ls`, it will show you everything in your home directory. Try it out.
+
+```bash
+$ ls
+```
+
+You should get a list of stuff, unless your home directory is empty. What you just did is the exact same thing as opening the Finder application and clicking the home button on the sidebar, and looking at what is there:
+
+![Home directory in Finder](finder_home.png)
