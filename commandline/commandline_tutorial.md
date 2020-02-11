@@ -42,3 +42,9 @@ $ ls
 You should get a list of stuff, unless your home directory is empty. What you just did is the exact same thing as opening the Finder application and clicking the home button on the sidebar, and looking at what is there:
 
 ![Home directory in Finder](finder_home.png)
+
+And here is what `$ ls` outputs on my computer:
+
+![ls output](ls_output_example.png)
+
+Sure enough, we see the same stuff we would have seen in the Finder app.
