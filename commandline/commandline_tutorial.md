@@ -53,7 +53,7 @@ But listing whatever is in your current directory doesn't really help. We need t
 cd name-of-directory
 ```
 
-where `name-of-directory` is where you want to go. For example, I have a programming folder in my home directory. If I wanted to access that from inside the Terminal, I could enter
+where `name-of-directory` is where you want to go. (`cd` just stands for "change directory") For example, I have a programming folder in my home directory. If I wanted to access that from inside the Terminal, I could enter
 
 ```bash
 cd Programming
