@@ -4,7 +4,7 @@ By Sylvan Martin
 
 ## What it is
 
-The command line, or “shell” as it is most often referred to, is a way to interact with and use your computer which gives you more control than the regular GUI we are used to. While in the beginning it may be harder to use, it is worth having a basic understanding of how to use it as we will be using it a lot in the club.
+The command line, or “shell” as it is most often referred to, is a way to interact with and use your computer which gives you more control than the regular graphical interface we are used to. While in the beginning it may be harder to use, it is worth having a basic understanding of how to use it as we will be using it a lot in the club.
 
 ## How it works
 
@@ -16,17 +16,19 @@ On a Mac, you can access the shell through the Terminal application, which comes
 
 ![Opening Terminal](search.png)
 
-Upon opening the application, you will be greeted with what is called the Command Prompt. This is the $ you will see following your username on your computer. The exact layout will look different for everyone. Depending on your preferences, you can customize the color scheme of the shell. For example, I have green text on a black translucent background because I think it looks cool.
+Upon opening the application, you will be greeted with what is called the Command Prompt. This is the `$` character you will see following your username on your computer. The exact layout will look different for everyone. Depending on your preferences, you can customize the color scheme of the shell. For example, I have green text on a black translucent background because I think it looks cool.
 
 ![Terminal Prompt](prompt.png)
 
-Now you are ready to start typing in commands! Notice the “~” (tilde) following your username, and before the $? That is telling you what directory you are in. (A directory is just a fancy word for a folder.) In this case, this means you are in the Home Directory. This is the same as if you were to open the finder Application to your home folder.
+Now you are ready to start typing in commands! Notice the “~” (tilde) following your username, and before the $? This tells you that you are in your home directory. This is the same as if you were to open the finder Application to your home folder. Soon I will go into more detail about this `~` symbol, and how to use it.
 
 Before beginning commands, the convention for writing a command in plain text is:
 
 ```bash
 command-goes-here
 ```
+
+where "command-goes-here" is replaced with whatever command.
 
 When you see a command in a `text box like this` on its own line, it is refering to a command to be run.
 
@@ -42,7 +44,7 @@ You should get a list of stuff, unless your home directory is empty. What you ju
 
 ![Home directory in Finder](finder_home.png)
 
-And here is what `$ ls` outputs on my computer:
+And here is what `ls` outputs on my computer:
 
 ![ls output](ls_output_example.png)
 
@@ -124,4 +126,26 @@ cd .. # we are now in the Programming directory
 cd .. # and now we're back where we started
 ```
 
-This seems a little irritating, having to type `cd ..` over and over. 
+This seems a little irritating, having to type `cd ..` over and over. Well, just like `~`, `..` is merely a symbol that represents the parent directory, meaning you can use it over and over in the same path. So those two `cd` commands could be replaced with
+
+```bash
+cd ../..
+```
+
+which is much cleaner.
+
+As mentioned before, all paths are **relative paths** unless there is a `/` in the front of them. So here I'll go into more detail about the distinction between relative paths and absolute paths. A relative path starts "searching" from wherever you currently are. If you are in the Python directory, then when you type `cd projects` it will search the Python directory for any folders called "projects". If there is no such directory, it won't work.
+
+An **absolute path** starts searching from your computer's root directory. Now, unless you've had experience with this sort of stuff, it's likely that you have never actually seen your computer's root directory. Well, there must be some single "folder" where every other folder and file on your computer is nested inside, and the root directory is exactly that. It is at the "top" of the directory structure. You can take a look at what is in your root directory by running
+
+```bash
+ls /
+```
+
+And you should see something similar to this
+
+![Root directory in the shell](root_shell.png)
+
+Or you can also run `open /` to open a finder window on the root directory, but the finder window will show less, but go ahead and try it! You should see something similar to this
+
+![Root directory in finder](root_finder.png)
