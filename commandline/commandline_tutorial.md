@@ -110,3 +110,18 @@ code ~/Programming/Tutorials/commandline # this is actually the exact command I 
 ```
 
 `..` is a litte bit different. It refers to the **parent directory** of the directory you are currently in. What does this mean? Well, as you may already know, directories are organized in a hierarchy. With some directories being nested in each other. When you're going through your files and you go into a bunch of folders, sometimes you want to go "back" a folder, meaning going to the folder that holds whatever folder you are in. This is what a parent directory is. It is the directory that is "one level up" or "one level back" from wherever you currently are.
+
+Try this out yourself! Go into a directory two levels down, then enter `cd ..` twice to get back to your starting directory. Here's an example
+
+```bash
+cd Programming/Python
+```
+
+Now we will go back.
+
+```bash
+cd .. # we are now in the Programming directory
+cd .. # and now we're back where we started
+```
+
+This seems a little irritating, having to type `cd ..` over and over. 
